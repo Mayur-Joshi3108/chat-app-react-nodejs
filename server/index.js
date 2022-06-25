@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 mongoose
-  .connect("<MongoDB Atlas link>", {
+  .connect("mongodb+srv://Hrishi:pass123@cluster0.xonxj.mongodb.net/messages?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
